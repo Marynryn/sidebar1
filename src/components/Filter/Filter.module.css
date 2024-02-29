@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f69a73;
+}
+.decor {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto 0;
+  background: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+.form_left_decoration,
+.form_right_decoration {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #f69a73;
+  border-radius: 20px;
+}
+.form_left_decoration {
+  bottom: 60px;
+  left: -30px;
+}
+.form_right_decoration {
+  top: 60px;
+  right: -30px;
+}
+.form_left_decoration:before,
+.form_left_decoration:after,
+.form_right_decoration:before,
+.form_right_decoration:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
+.form_left_decoration:before {
+  top: -20px;
+}
+.form_left_decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form_right_decoration:before {
+  top: -20px;
+  right: 0;
+}
+.form_right_decoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.form-inner {
+  padding: 50px;
+  margin: 25px;
+}
+.form_inner input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 20px;
+  margin: 10px 50px 10px 50px;
+  background: #e9eff6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.button_submit {
+  margin-top: 30px;
+  background: #f69a73;
+  border-bottom: 4px solid #d87d56;
+  color: white;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 20px;
+  margin: 30px 50px 30px 50px;
+
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.form_inner label {
+  width: 100%;
+  max-width: 250px;
+}
+.form_inner h3 {
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #707981;
+}
+input {
+  width: 200 px;
+}
+
+input:hover,
+input:focus {
+  border-color: transparent;
+  outline: none;
+}
